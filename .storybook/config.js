@@ -9,12 +9,12 @@ addParameters({
   cssresources: [
     {
       id: `dark`,
-      code: `<link rel="stylesheet" href="/themes/theme-dark-94707885.css">`,
+      code: `<link rel="stylesheet" href="/themes/theme-dark.css">`,
       picked: false,
     },
     {
       id: `light`,
-      code: `<link rel="stylesheet" href="/themes/theme-light-28881820.css">`,
+      code: `<link rel="stylesheet" href="/themes/theme-light.css">`,
       picked: true,
     },
   ],

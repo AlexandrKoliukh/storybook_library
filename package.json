@@ -16,7 +16,8 @@
     "copy-theme": "shx cp -f node_modules/web-themes/lib/themes/*.css public/themes/",
     "clear-theme": "shx rm -f public/themes/*",
     "make-theme-dir": "shx mkdir -p \"public/themes\"",
-    "make-theme": "npm-run-all make-theme-dir clear-theme copy-theme",
+    "rename-theme-files": "shx mv public/themes/theme-dark*.css public/themes/theme-dark.css && shx mv public/themes/theme-light*.css public/themes/theme-light.css",
+    "make-theme": "npm-run-all make-theme-dir clear-theme copy-theme rename-theme-files",
     "postinstall": "npm run make-theme"
   },
   "keywords": [],
